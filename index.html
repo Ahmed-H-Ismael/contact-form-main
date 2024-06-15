@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <title>Frontend Mentor | Contact form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="container">
+      <h1>Contact Us</h1>
+      <form action="">
+        <div class="form-content d-flex">
+          <div class="f-name">
+            <label for="First">First Name</label>
+            <input type="text" class="myinput" id="First" >
+            <div class="required-text">this field is required</div>
+          </div>
+          <div class="l-name">
+            <label for="Last"> Last Name</label>
+            <input type="text" class="myinput" id="Last">
+            <div class="required-text">this field is required</div>
+          </div>
+        </div>
+        <div class="email form-content">
+          <label for="Email">Email Address</label>
+          <input type="email" class="myinput" id="Email">
+          <div class="required-text">please Enter a valid Email</div>
+        </div>
+        <div class="radio-check form-content">
+          <label>Query Type</label>
+          <div class="radio-content">
+            <div class="radio">
+              <input type="radio" id="General" name="size" class="myradio1">
+              <label for="General"><span class="radio-btn"></span>General Enquiry</label>
+            </div>
+            <div class="radio">
+              <input type="radio" id="Support" name="size" class="myradio2">
+              <label for="Support"><span class="radio-btn"></span>Support Request</label>
+            </div>
+          </div> 
+          <div class="required-text">please Select a Query type</div>   
+        </div>
+        <div class="message form-content">
+          <label for="Message">Message</label>
+          <textarea name="Message" id="Message" class="myinput"></textarea>
+          <div class="required-text">this field is required</div>
+        </div>
+        <div class="form-content check">
+          <input type="checkbox" class="myinput" id="checkbox">
+          <div class="required-text">to submit this form,please consent to being contacted</div>
+          <label for="checkbox" class="form-contract">I consent to being contacted by the team</label><br>
+        </div>
+        
+        <button class="btn form-content">Submit</button>
+      </form>
+    </div>
+  </main>
+  <div class="model">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" fill="none" viewBox="0 0 20 21"><path fill="#fff" d="M14.28 7.72a.748.748 0 0 1 0 1.06l-5.25 5.25a.748.748 0 0 1-1.06 0l-2.25-2.25a.75.75 0 1 1 1.06-1.06l1.72 1.72 4.72-4.72a.75.75 0 0 1 1.06 0Zm5.47 2.78A9.75 9.75 0 1 1 10 .75a9.76 9.76 0 0 1 9.75 9.75Zm-1.5 0A8.25 8.25 0 1 0 10 18.75a8.26 8.26 0 0 0 8.25-8.25Z"/></svg> <span>Message Sent</span>
+   <p>!Thanks for completing the form. Well be in touch soon!"</p> 
+  </div>
+
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </footer>
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
